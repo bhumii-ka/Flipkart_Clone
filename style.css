@@ -1,0 +1,144 @@
+body{
+    background: #f1f2f4;
+    font-size:17px;
+    margin: 0;
+    font-family: inter_regular,fallback-inter_regular,Arial,sans-serif;
+}
+.header{
+    background: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    top:0;
+    left: 0;
+}
+
+input,svg {
+    font-family: inter_regular,fallback-inter_regular,Arial,sans-serif;
+    background:#f0f5ff;
+    font-size: 18px;
+    padding: 9px;
+    border: none;
+}
+input{
+    width: 100%;
+    border-radius: 0 6px 6px 0 ;
+}
+.make-flex{
+    display: flex;
+    align-items: center;
+}
+.header-text{
+    margin:5px;
+    margin-right: 7px;
+}
+svg{
+    border-radius: 6px 0 0 6px;
+}
+#menu{
+    padding:5px;
+    border-radius: 10px;
+    border:solid 1px white;
+    background-color:none;
+}
+#menu:hover{
+    background-color: #f0f5ff;
+    border: solid 1px #797676;
+}
+#search-bar{
+    width: 43%;
+}
+input:focus{
+    outline: none;
+}
+
+#login{
+    padding:6px 10px;
+    border-radius: 7px;
+    background: none;
+    display: block;
+}
+#login:hover{
+    color:white;
+    background-color: #2a55e5;
+}
+#login:hover i{
+    transform: rotate(180deg);
+    transition-property: transform;
+    transition-duration: 500ms;
+}
+.drop-menu{
+    padding: 0;
+    font-size: 0.9rem;
+    list-style-type: none;
+    display:none;
+    margin: auto;
+    width: 20%;
+    border-radius: 5px;
+    box-shadow: 0 0 8px 5px rgba(0,0,0,0.2);
+}
+.drop-menu li{
+    padding: 10px 20px ;
+    gap:10px;
+}
+.drop-menu li:hover{
+    background-color: #fafafa;
+}
+.drop-menu a{
+    text-decoration: none;
+    color: black;
+}
+.drop-menu img{
+    width: 18px;
+}
+#first-li-ele{
+    font-size: 1rem;
+    border-bottom:solid 2px #e0e0e0;
+    margin: 5px 0;
+    padding: 10px 10px;
+}
+.drop-menu #first-li-ele:hover{
+    background-color: #ffffff;
+}
+#login:hover .drop-menu{
+    display:block;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+.sign{
+    color: #2a55e5;
+    font-weight: bold;
+    margin-left: 30%;
+}
+
+#menu:hover .drop-menu{
+    display:block;
+    position: absolute;
+    right: 10px;
+    background-color: #ffffff;
+    z-index: 1;
+    width: 17%;
+}
+
+/* categories */
+
+.categories{
+    margin: 10px 15px;
+    background-color: #ffffff;
+    justify-content: space-evenly;
+    font-size: 0.9rem;
+    font-weight: bold;
+    
+}
+.col-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    margin: 17px 0;
+}
